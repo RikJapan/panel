@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Conny Wallstrom's Retouching Toolkit</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/panel.css">
+  <script src="./lib/CSInterface.js"></script>
+  <script src="./lib/jquery-1.9.1.js"></script>
+  <script src="./js/ext.js"></script>
+   <script type="text/javascript" src="./js/main.js"></script>
+ <script type="text/javascript" src="./js/Vulcan.js"></script>
+ <script type="text/javascript" src="./js/AgoraLib.js"></script>
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6/html5shiv.min.js"></script><![endif]-->
+</head>
+<body onLoad="onLoaded()">
+  <div class="panel ">
+      <img class="logo" src="./img/logo.png" width="181" height="67">
+	<div id="Main">
+	<p>
+      	<img id="button-brush"  class="button-tool" data-idType="stringID" data-function="Tool_Lasso_Tool()" title="Lasso Tool"  src="./img/LassoTool.png">
+      	<img id="button-healhard" class="button-tool" data-toolID='marqueeRectTool' data-idType="stringID" title="Marquee Tool" data-function="Tool_Rectangular_Marquee_Tool()" src="./img/MarqueeTool.png">
+      	<img id="button-healsoft" class="button-tool" data-toolID='penTool' data-idType="stringID" title="Pen Tool" data-function="Tool_Pen_Tool()" src="./img/PenTool.png">
+      	<img id="button-clonehard" class="button-tool" data-toolID='PbTl' data-idType="charID" title="Brush Tool" data-function="Tool_Brush_Tool()" src="./img/BrushTool.png">
+      	<img id="button-clonesoft" class="button-tool" data-toolID='ClTl' data-idType="charID" title="Clone Stamp Tool" data-function="Tool_Clone_Stamp_Tool()" src="./img/CloneStamp.png">
+      	<img id="button-mixbrush" class="button-tool" data-toolID='magicStampTool' data-idType="stringID" title="Healing Brush Tool" data-function="Tool_Healing_Brush_Tool()" src="./img/HealingBrush.png">
+      </p>
+	<p>
+        <a href="index.html" id="button-bandpass" class="button button-xanhduong button-100" title="">BACK</a>
+      </p>
+	  <p class="sectiontitle">TRANG ĐIỂM BÓNG MẮT</p>
+	       <p>
+	       <button class="button button-xanhduong button-100" onclick="y01()" title="Bóng mắt xám" >Bóng Mắt Xám</button>
+      </p>
+	  <p>
+	       <button class="button button-xanhduong button-100" onclick="y02()" title="Bóng mắt bạc" >Bóng Mắt Bạc</button>
+      </p>
+	  <p>
+	       <button class="button button-xanhduong button-100" onclick="y03()" title="Bóng bạc vàng" >Bóng Mắt Bạc Vàng</button>
+      </p>
+	  <p>
+	       <button class="button button-xanhduong button-100" onclick="y04()" title="Bóng mắt đồng" >Bóng Mắt Đồng</button>
+      </p>
+	  <p>
+	       <button class="button button-xanhduong button-100" onclick="y05()" title="Bóng mắt đào" >Bóng Mắt Đào</button>
+      </p>
+	  <p>
+	       <button class="button button-xanhduong button-100" onclick="y06()" title="Bóng mắt Nude" >Bóng Mắt Nude</button>
+      </p>
+	  <p>
+	       <button class="button button-xanhduong button-100" onclick="y07()" title="Bong mắt hồng" >Bong Mắt Hồng</button>
+      </p>
+	  <p>
+	       <button class="button button-xanhduong button-100" onclick="y08()" title="Bóng xám xanh" >Bóng Xám Xanh</button>
+      </p>
+	  <p>
+	       <button class="button button-xanhduong button-100" onclick="y09()" title="Bóng mắt tím" >Bóng Mắt Tím</button>
+      </p>
+	  <p>
+	       <button class="button button-xanhduong button-100" onclick="y10()" title="Bóng mắt xanh" >Bóng Mắt Xanh</button>
+      </p>
+	  <p class="sectiontitle">MÀU SON MÔI</p>
+      <p>
+	       <button class="button button-xanhduong button-100" onclick="c01()" title="Son bóng Nude" >Son Bóng Nude</button>
+      </p>
+	  <p>
+	       <button class="button button-xanhduong button-100" onclick="c02()" title="Son bóng Cam" >Son Bóng Cam</button>
+      </p>
+	  <p>
+	       <button class="button button-xanhduong button-100" onclick="c03()"title="Son hồng đào" >Son Hồng Đào</button>
+      </p>
+	  <p>
+	       <button class="button button-xanhduong button-100" onclick="c04()" title="Son bóng tím" >Son Bóng Tím</button>
+      </p>
+	  <p>
+	       <button class="button button-xanhduong button-100" onclick="c05()" title="Hồng đào tự nhiên" >Song Bóng Tự Nhiên</button>
+      </p>
+	  <p>
+	       <button class="button button-xanhduong button-100" onclick="c06()" title="Song bóng đỏ" >Song Bóng Đỏ</button>
+      </p>
+	  <p class="sectiontitle">Copyright Ⓒ NATURE STUDIOS</p>
+      <p>
+        <a href="index.html" id="button-bandpass" class="button button-xanhduong button-100">BACK</a>
+      </p>
+     </div>
+    
+  </div>
+</body>
+</html>
